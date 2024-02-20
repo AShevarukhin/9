@@ -1,0 +1,11 @@
+import random
+def generate_matrix(size):
+ matrix = []
+ for i in range(size):
+  row = []
+ for i in range(size):
+  row.append(random.randint(10, 99))
+ matrix.append(row)
+ return matrix
+size = int(input("Введите размер матрицы: "))
+matrix = generate_matrix(size)
